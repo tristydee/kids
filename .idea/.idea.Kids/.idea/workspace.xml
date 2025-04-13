@@ -4,7 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10e7b172-babc-4f5f-9c2d-63f42cbf978e" name="Changes" comment="" />
+    <list default="true" id="10e7b172-babc-4f5f-9c2d-63f42cbf978e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/RandomAI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/RandomAI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/SquareDict.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/SquareDict.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/BlockingSquare.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/BlockingSquare.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/MoveableSquare.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/MoveableSquare.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/MovingSquare.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/NormalSquare.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/NormalSquare.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/Player.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/Player.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/Square.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/Square.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/SquareFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/SquareFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/Views.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/Views/BlockingView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/Views/BlockingView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/Views/GroundSquareView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/Views/GroundSquareView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/Views/InsectView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/Views/InsectView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/Views/PlayerView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/Views/PlayerView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/Views/SquareView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/Views/SquareView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/_Common/Scripts/Input.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/_Common/Scripts/Input.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/_Common/Scripts/InputHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Games/_Common/Scripts/InputHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Games/Catching/Catching.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Games/Catching/Catching.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/InitGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/InitGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Insect.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Insect.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/MovingView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/MovingView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Player.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Player.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/MovingSquare.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,22 +60,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "tristan-triband"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tristan-triband&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/tristydee/kids.git",
-    "accountId": "b211e874-b304-444c-b016-945ec87d5401"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/tristydee/kids.git&quot;,
+    &quot;accountId&quot;: &quot;b211e874-b304-444c-b016-945ec87d5401&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b2825b85708b44e8bd03936151c4970cc400/3a/4e7b8469/Tile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b2825b85708b44e8bd03936151c4970cc400/bb/f660e40b/Tilemap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b2825b85708b44e8bd03936151c4970cc400/c5/a372bd72/TileData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Games/Catching/Scripts/InitGame.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Games/Catching/Scripts/Insect.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Games/Catching/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/MoveableSquare.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/MovingSquare.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Games/Catching/Scripts/Tiles/Views/InsectView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Games/_Common/Scripts/UpdateHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Main/DiContainer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -39,23 +89,26 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2va6tmnK8CWZkg8bE1E9x9lBEyd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.40f1/Unity.app/Contents/MacOS/Unity" />
@@ -83,10 +136,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="47297">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="56501">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="47297" />
+      <option name="pid" value="56501" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -104,6 +157,7 @@
       <updated>1744371054727</updated>
       <workItem from="1744371055946" duration="1038000" />
       <workItem from="1744377566410" duration="1591000" />
+      <workItem from="1744379280243" duration="12294000" />
     </task>
     <servers />
   </component>
@@ -126,29 +180,16 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Games/Catching/Scripts/InitGame.cs</url>
-          <line>13</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/InitGame.cs" containingFunctionPresentation="Method 'InstallBindings'">
+          <line>23</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/InitGame.cs" containingFunctionPresentation="Method 'Start'">
             <startOffsets>
-              <option value="288" />
+              <option value="641" />
             </startOffsets>
             <endOffsets>
-              <option value="360" />
+              <option value="642" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Games/Catching/Scripts/Player.cs</url>
-          <line>12</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Games/Catching/Scripts/Player.cs" containingFunctionPresentation="Method 'Init'">
-            <startOffsets>
-              <option value="241" />
-            </startOffsets>
-            <endOffsets>
-              <option value="242" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
