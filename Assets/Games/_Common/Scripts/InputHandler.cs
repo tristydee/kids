@@ -12,11 +12,11 @@ namespace Common
         [Inject] private UpdateHandler _updateHandler;
 
         private List<(InputAction actionButton, Input playerInput)> _actions = new();
-        private List<(InputAction moveButton, Input)> _moves = new();
+        private List<(InputAction moveButton, Input)> _moveHorizontal = new();
+        private List<(InputAction moveButton, Input)> _moveVertical = new();
 
-        public InputHandler(UpdateHandler updateHandler)
+        public void Init()
         {
-            _updateHandler = updateHandler;
             _updateHandler.Register(this);
 
             var inputActions = new PlayerInputActions();
@@ -25,8 +25,11 @@ namespace Common
             _actions.Add((inputActions.PlayerActionMap.Action_P1, Input.PlayerInputs[0]));
             _actions.Add((inputActions.PlayerActionMap.Action_P2, Input.PlayerInputs[1]));
 
-            _moves.Add((inputActions.PlayerActionMap.Move_P1, Input.PlayerInputs[0]));
-            _moves.Add((inputActions.PlayerActionMap.Move_P2, Input.PlayerInputs[1]));
+            _moveHorizontal.Add((inputActions.PlayerActionMap.Move_Horizontal_P1, Input.PlayerInputs[0]));
+            _moveHorizontal.Add((inputActions.PlayerActionMap.Move_Horizontal_P2, Input.PlayerInputs[1]));
+
+            _moveVertical.Add((inputActions.PlayerActionMap.Move_Vertical_P1, Input.PlayerInputs[0]));
+            _moveVertical.Add((inputActions.PlayerActionMap.Move_Vertical_P2, Input.PlayerInputs[1]));
         }
 
         public void Tick(float delta)
@@ -36,9 +39,17 @@ namespace Common
                 playerInput.IsActionPressed = actionButton.WasPressedThisFrame();
             }
 
-            foreach (var (moveButton, playerInput) in _moves)
+
+            foreach (var (moveButton, playerInput) in _moveHorizontal)
             {
-                playerInput.MoveDirection = moveButton.ReadValue<Vector2Int>();
+                var dir = moveButton.ReadValue<float>();
+                playerInput.MoveDirection = new Vector2Int(Mathf.RoundToInt(dir), 0);
+            }
+
+            foreach (var (moveButton, playerInput) in _moveVertical)
+            {
+                var dir = moveButton.ReadValue<float>();
+                playerInput.MoveDirection = new Vector2Int(playerInput.MoveDirection.x, Mathf.RoundToInt(dir));
             }
         }
     }

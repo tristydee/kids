@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Catching
@@ -7,18 +8,32 @@ namespace Catching
         protected Vector2Int Position;
         protected SquareView View;
         protected SquareDict Squares;
-        
-        public void SetPosition(Vector2Int tilePos)
+
+        public void Init(Vector2Int position, SquareView view, SquareDict squares)
         {
-            Position = tilePos;
-            Squares[Position] = this;
-            Squares[tilePos] = null;
-            View.MoveTo(tilePos);
+            Position = position;
+            View = view;
+            Squares = squares;
+            SetPosition(position);
+            SetView(view);
+        }
+
+        public void SetPosition(Vector2Int newPos)
+        {
+            Squares[Position] = null;
+            Squares[newPos] = this;
+            Position = newPos;
+            View.MoveTo(newPos);
         }
 
         public void SetView(SquareView view)
         {
             View = view;
+        }
+
+        public virtual void Catch(Player player)
+        {
+            
         }
     }
 }

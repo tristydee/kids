@@ -110,7 +110,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Move_P1"",
+                    ""name"": ""Move_Horizontal_P1"",
                     ""type"": ""Button"",
                     ""id"": ""9c663888-da76-4109-bc51-152291173ce0"",
                     ""expectedControlType"": """",
@@ -119,9 +119,27 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Move_P2"",
+                    ""name"": ""Move_Vertical_P1"",
+                    ""type"": ""Button"",
+                    ""id"": ""c1a8af40-917f-497a-8afa-5506ddc36c87"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Move_Horizontal_P2"",
                     ""type"": ""Button"",
                     ""id"": ""83969808-9de7-4cf9-abbf-872f55eeddd4"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Move_Vertical_P2"",
+                    ""type"": ""Button"",
+                    ""id"": ""ef8d52d3-0ecb-49f1-a15c-c0621d250650"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -158,7 +176,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move_P1"",
+                    ""action"": ""Move_Horizontal_P1"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -169,7 +187,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move_P1"",
+                    ""action"": ""Move_Horizontal_P1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -180,40 +198,40 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move_P1"",
+                    ""action"": ""Move_Horizontal_P1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""1D Axis"",
-                    ""id"": ""989daded-565d-4d16-812c-8001c743ddc4"",
+                    ""id"": ""27215fee-003b-495e-90ee-0564e01bed69"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move_P1"",
+                    ""action"": ""Move_Vertical_P1"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""Positive"",
-                    ""id"": ""94513f60-1956-45d3-b1a7-b68530189550"",
+                    ""id"": ""961ad089-9f05-4366-8cbd-b81c6d224fc1"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move_P1"",
+                    ""action"": ""Move_Vertical_P1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""Negative"",
-                    ""id"": ""d274cc69-b4bf-4d94-a3f9-4ecb4a07331c"",
+                    ""id"": ""8be1fcdc-c362-4a91-bcb6-b18214369b31"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move_P1"",
+                    ""action"": ""Move_Vertical_P1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -224,7 +242,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move_P2"",
+                    ""action"": ""Move_Horizontal_P2"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -235,7 +253,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move_P2"",
+                    ""action"": ""Move_Horizontal_P2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -246,40 +264,40 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move_P2"",
+                    ""action"": ""Move_Horizontal_P2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""1D Axis"",
-                    ""id"": ""3708404c-ebb1-4ed9-8d57-485c7b9ff2b5"",
+                    ""id"": ""cb40f476-4031-43c8-ad4c-ef9f495b265b"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move_P2"",
+                    ""action"": ""Move_Vertical_P2"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""Positive"",
-                    ""id"": ""e8969216-8f8b-4507-be0b-10917eb77543"",
+                    ""id"": ""ef95eae9-0dbe-498b-a0c5-bad54e085bd4"",
                     ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move_P2"",
+                    ""action"": ""Move_Vertical_P2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""Negative"",
-                    ""id"": ""8fc445e1-e501-4af2-bdd9-51df21977e6c"",
+                    ""id"": ""9f41db72-1aae-4c93-be72-72d8a9be3a6b"",
                     ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move_P2"",
+                    ""action"": ""Move_Vertical_P2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 }
@@ -292,8 +310,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_PlayerActionMap = asset.FindActionMap("PlayerActionMap", throwIfNotFound: true);
         m_PlayerActionMap_Action_P1 = m_PlayerActionMap.FindAction("Action_P1", throwIfNotFound: true);
         m_PlayerActionMap_Action_P2 = m_PlayerActionMap.FindAction("Action_P2", throwIfNotFound: true);
-        m_PlayerActionMap_Move_P1 = m_PlayerActionMap.FindAction("Move_P1", throwIfNotFound: true);
-        m_PlayerActionMap_Move_P2 = m_PlayerActionMap.FindAction("Move_P2", throwIfNotFound: true);
+        m_PlayerActionMap_Move_Horizontal_P1 = m_PlayerActionMap.FindAction("Move_Horizontal_P1", throwIfNotFound: true);
+        m_PlayerActionMap_Move_Vertical_P1 = m_PlayerActionMap.FindAction("Move_Vertical_P1", throwIfNotFound: true);
+        m_PlayerActionMap_Move_Horizontal_P2 = m_PlayerActionMap.FindAction("Move_Horizontal_P2", throwIfNotFound: true);
+        m_PlayerActionMap_Move_Vertical_P2 = m_PlayerActionMap.FindAction("Move_Vertical_P2", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
@@ -376,8 +396,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private List<IPlayerActionMapActions> m_PlayerActionMapActionsCallbackInterfaces = new List<IPlayerActionMapActions>();
     private readonly InputAction m_PlayerActionMap_Action_P1;
     private readonly InputAction m_PlayerActionMap_Action_P2;
-    private readonly InputAction m_PlayerActionMap_Move_P1;
-    private readonly InputAction m_PlayerActionMap_Move_P2;
+    private readonly InputAction m_PlayerActionMap_Move_Horizontal_P1;
+    private readonly InputAction m_PlayerActionMap_Move_Vertical_P1;
+    private readonly InputAction m_PlayerActionMap_Move_Horizontal_P2;
+    private readonly InputAction m_PlayerActionMap_Move_Vertical_P2;
     /// <summary>
     /// Provides access to input actions defined in input action map "PlayerActionMap".
     /// </summary>
@@ -398,13 +420,21 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @Action_P2 => m_Wrapper.m_PlayerActionMap_Action_P2;
         /// <summary>
-        /// Provides access to the underlying input action "PlayerActionMap/Move_P1".
+        /// Provides access to the underlying input action "PlayerActionMap/Move_Horizontal_P1".
         /// </summary>
-        public InputAction @Move_P1 => m_Wrapper.m_PlayerActionMap_Move_P1;
+        public InputAction @Move_Horizontal_P1 => m_Wrapper.m_PlayerActionMap_Move_Horizontal_P1;
         /// <summary>
-        /// Provides access to the underlying input action "PlayerActionMap/Move_P2".
+        /// Provides access to the underlying input action "PlayerActionMap/Move_Vertical_P1".
         /// </summary>
-        public InputAction @Move_P2 => m_Wrapper.m_PlayerActionMap_Move_P2;
+        public InputAction @Move_Vertical_P1 => m_Wrapper.m_PlayerActionMap_Move_Vertical_P1;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerActionMap/Move_Horizontal_P2".
+        /// </summary>
+        public InputAction @Move_Horizontal_P2 => m_Wrapper.m_PlayerActionMap_Move_Horizontal_P2;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerActionMap/Move_Vertical_P2".
+        /// </summary>
+        public InputAction @Move_Vertical_P2 => m_Wrapper.m_PlayerActionMap_Move_Vertical_P2;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -437,12 +467,18 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Action_P2.started += instance.OnAction_P2;
             @Action_P2.performed += instance.OnAction_P2;
             @Action_P2.canceled += instance.OnAction_P2;
-            @Move_P1.started += instance.OnMove_P1;
-            @Move_P1.performed += instance.OnMove_P1;
-            @Move_P1.canceled += instance.OnMove_P1;
-            @Move_P2.started += instance.OnMove_P2;
-            @Move_P2.performed += instance.OnMove_P2;
-            @Move_P2.canceled += instance.OnMove_P2;
+            @Move_Horizontal_P1.started += instance.OnMove_Horizontal_P1;
+            @Move_Horizontal_P1.performed += instance.OnMove_Horizontal_P1;
+            @Move_Horizontal_P1.canceled += instance.OnMove_Horizontal_P1;
+            @Move_Vertical_P1.started += instance.OnMove_Vertical_P1;
+            @Move_Vertical_P1.performed += instance.OnMove_Vertical_P1;
+            @Move_Vertical_P1.canceled += instance.OnMove_Vertical_P1;
+            @Move_Horizontal_P2.started += instance.OnMove_Horizontal_P2;
+            @Move_Horizontal_P2.performed += instance.OnMove_Horizontal_P2;
+            @Move_Horizontal_P2.canceled += instance.OnMove_Horizontal_P2;
+            @Move_Vertical_P2.started += instance.OnMove_Vertical_P2;
+            @Move_Vertical_P2.performed += instance.OnMove_Vertical_P2;
+            @Move_Vertical_P2.canceled += instance.OnMove_Vertical_P2;
         }
 
         /// <summary>
@@ -460,12 +496,18 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Action_P2.started -= instance.OnAction_P2;
             @Action_P2.performed -= instance.OnAction_P2;
             @Action_P2.canceled -= instance.OnAction_P2;
-            @Move_P1.started -= instance.OnMove_P1;
-            @Move_P1.performed -= instance.OnMove_P1;
-            @Move_P1.canceled -= instance.OnMove_P1;
-            @Move_P2.started -= instance.OnMove_P2;
-            @Move_P2.performed -= instance.OnMove_P2;
-            @Move_P2.canceled -= instance.OnMove_P2;
+            @Move_Horizontal_P1.started -= instance.OnMove_Horizontal_P1;
+            @Move_Horizontal_P1.performed -= instance.OnMove_Horizontal_P1;
+            @Move_Horizontal_P1.canceled -= instance.OnMove_Horizontal_P1;
+            @Move_Vertical_P1.started -= instance.OnMove_Vertical_P1;
+            @Move_Vertical_P1.performed -= instance.OnMove_Vertical_P1;
+            @Move_Vertical_P1.canceled -= instance.OnMove_Vertical_P1;
+            @Move_Horizontal_P2.started -= instance.OnMove_Horizontal_P2;
+            @Move_Horizontal_P2.performed -= instance.OnMove_Horizontal_P2;
+            @Move_Horizontal_P2.canceled -= instance.OnMove_Horizontal_P2;
+            @Move_Vertical_P2.started -= instance.OnMove_Vertical_P2;
+            @Move_Vertical_P2.performed -= instance.OnMove_Vertical_P2;
+            @Move_Vertical_P2.canceled -= instance.OnMove_Vertical_P2;
         }
 
         /// <summary>
@@ -521,18 +563,32 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnAction_P2(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Move_P1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "Move_Horizontal_P1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnMove_P1(InputAction.CallbackContext context);
+        void OnMove_Horizontal_P1(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Move_P2" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "Move_Vertical_P1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnMove_P2(InputAction.CallbackContext context);
+        void OnMove_Vertical_P1(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Move_Horizontal_P2" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnMove_Horizontal_P2(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Move_Vertical_P2" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnMove_Vertical_P2(InputAction.CallbackContext context);
     }
 }

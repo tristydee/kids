@@ -1,5 +1,7 @@
 using Common;
+using UnityEngine;
 using Zenject;
+using Input = Common.Input;
 
 namespace Catching
 {
@@ -19,7 +21,25 @@ namespace Catching
         
         public void Tick(float delta)
         {
-            //do some random stuff here.
+            var x = Random.Range(0, 2);
+            if (x == 0)
+                x = -1;
+            
+            var y = Random.Range(0, 2);
+            if (y == 0)
+                y = -1;
+
+            if (Random.value > .5f)
+            {
+                x = 0;
+            }
+            else
+            {
+                y = 0;
+            }
+            
+            _input.MoveDirection = new Vector2Int(x,y);
+            
         }
     }
 }

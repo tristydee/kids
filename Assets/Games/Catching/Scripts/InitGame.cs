@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using Common;
 using Games.Catching.Scripts.Tiles;
@@ -23,44 +24,44 @@ namespace Catching
         public override void Start()
         {
             CreateGridFromViews();
-            
+            var inputHandler = new InputHandler();
+            Container.Inject(inputHandler);
+            inputHandler.Init();
             var players = objectSquares.GetSquaresOfType<Player>().ToList();
+
+            for (var i = 0; i < players.Count; i++)
+            {
+                var player = players[i];
+                Container.Inject(player);
+                player.Init(Common.Input.PlayerInputs[i], groundSquares, objectSquares);
+            }
+
+            var insects = objectSquares.GetSquaresOfType<CatchableSquare>().ToList();
+            for (var i = 0; i < insects.Count; i++)
+            {
+                var insect = insects[i];
+                Container.Inject(insect);
+                var ai = new RandomAI();
+                Container.Inject(ai);
+                var aiInput = new Common.Input();
+                ai.Init(aiInput);
+                insect.Init(aiInput, groundSquares, objectSquares);
+            }
             
-            Player p1 = players[0];
-            Player p2 = players[1];
-            MovingSquare insect = objectSquares.GetSquaresOfType<MovingSquare>().First();
-
-            Container.Inject(p1);
-            Container.Inject(p2);
-            Container.Inject(insect);
-
-            p1.Init(Common.Input.PlayerInputs[0], groundSquares, objectSquares);
-            p2.Init(Common.Input.PlayerInputs[1], groundSquares, objectSquares);
-
-            var ai = new RandomAI();
-            Container.Inject(ai);
-            var aiInput = new Common.Input();
-            ai.Init(aiInput);
-            insect.Init(aiInput, groundSquares, objectSquares);
+            
         }
 
         private void CreateGridFromViews()
         {
             var squareViews = FindObjectsByType<SquareView>(FindObjectsInactive.Exclude, FindObjectsSortMode.None)
                 .ToList();
-            for (int i = 0; i < squareViews.Count; i++)
+            foreach (var view in squareViews)
             {
-                var view = squareViews[i];
                 var pos = new Vector2Int((int)view.transform.position.x, (int)view.transform.position.y);
                 var square = SquareFactory.CreateSquare(view);
                 var map = view.Layer == 0 ? groundSquares : objectSquares;
-                map[pos] = square;
-                square.SetPosition(pos);
-                square.SetView(view);
+                square.Init(pos, view, map);
             }
         }
-        
-        
     }
 }
-

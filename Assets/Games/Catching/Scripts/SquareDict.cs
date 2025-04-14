@@ -6,11 +6,12 @@ namespace Catching
 {
     public class SquareDict : Dictionary<Vector2Int, Square>
     {
-        public IEnumerable<T> GetSquaresOfType<T>() where T: Square
+        public IEnumerable<T> GetSquaresOfType<T>() where T : Square
         {
-            return Values.Where(square => square.GetType() == typeof(T)).Select(s => (T)s);
+            var squaresOfType = Values.Where(square => square.GetType() == typeof(T));
+            return squaresOfType.Select(s => (T)s);
         }
-        
+
         // public TileDict(Tilemap map)
         // {
         //     for (int x = 0; x < map.size.x; x++)
